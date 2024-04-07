@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Edlayne Psicóloga</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/svg+xml" href="/ed-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <script src="script.js"></script>
+<div id="tela-inicial">
+  <div class="cabecalho2"></div>
+  <div class="menuContainer">
+    <div class="nomefuncao">
+      <p class='nome'>
+        edlayne
+      </p>
+      <p class='funcao'>
+        psicóloga
+      </p>
+    </div>
+    <div class="menu">
+      <div class="menuTexto">
+      <a href="horarios.html" class='menuitem'>
+        horários
+      </a>
+      <a href="consulta.html" class='menuitem'>
+        consultas
+      </a>
+
+      <a href="contato.html" class='menuitem'>
+        contato
+      </a>
+        </div>
+      <div class='logo'>
+        <div id="searchContainer">
+          <input type="text" id="searchInput" placeholder="Digite sua pesquisa" style="display: none;" onkeypress="searchText(event)">
+          <button class="menuBotao" onclick="showSearchInput()"><img class='lupa' src='lupa.png'></button>
+        </div>
+        
+        <button class="menuBotao" onclick="handleLogin()" ><img class='user' src='usuario.png'></button>
+        <button class="menuBotao" onclick = "hamburguer()" ><img class='hamburguer' src='hamburguer.png'></button>
+          
+      </div>
+    </div>
+  </div>
+  <div class="aba">
+    <div>
+    
+    
+  <img class="bgAba" src="aba.png">
+      <p class="sumario">Sumário</p>
+      <a href="#tela-inicial" id="top1" class="topicosAba">Tela inicial</a>
+      <a href="#meus-objetivos" id="top2" class="topicosAba">MEUS OBJETIVOS</a>
+      <a href="#sobre-mim" id="top3" class="topicosAba">Sobre mim</a>
+      <a href="#como-funciona-a-terapia-online" id="top4" class="topicosAba">Como Funciona a </br> Terapia Online</a>
+      </div>
+  </div>  
+
+  <div class='imagensComDesc'>
+    <div><img class='vaso' src="vaso.png" />
+      <img class='edlayne' src="0 1.png" />
+    </div>
+    <div class='textoDireita'>
+      <p class='titulo'>
+        Psicologia com consultas </br>
+        on-line
+      </p>
+
+      <p class='outro' style="">
+        Edlayne ribeiro da silva
+      </p>
+      <p class='desc'>
+        Psicologia é a área da ciência que estuda a mente e o comportamento humano e as suas interações com o ambiente
+        físico e social. A palavra provém dos termos gregos psico (alma) e logía (estudo). O objetivo da psicologia é
+        diagnosticar, compreender, explicar e orientar a mudança de comportamentos humanos.Psicologia é a área da
+        ciência que estuda a mente e o comportamento humano e as suas interações com o ambiente físico e social. A
+        palavra provém dos termos gregos psico (alma) e logía (estudo). O objetivo da psicologia é diagnosticar,
+        compreender, explicar e orientar a mudança de comportamentos humanos.
+      </p>
+
+
+      <div class="butao">
+
+        <button class="botao" type="button" onclick="handleLogin()"> consulte-se &nbsp;&nbsp; ▶ </button>
+      </div>
+    </div>
+
+  </div>
+  <div class='linha'><img src="lines.png" /></div>
+
+  <div class="cabecalho"></div>
+  <div class="login-container">
+    <div class="login-box">
+      <button class="detalhes1" type="button" > </button>
+
+      <div class="login-infos">
+        <p class='bemVindo'>Bem-vindo!</p>
+        <p class='facaLogin'>Faça o login da sua conta para continuar</p>
+        <div class="form">
+
+          <div class='email'>
+
+            <input type="email" id="email" placeholder="Digite o e-mail">
+          </div>
+          <div class="form-element">
+
+            <input type="password" id="password" placeholder="Digite a senha">
+          </div>
+          <div class='form-element'>
+            <a class='esqueceuSenha' href='senha.html'>Esqueceu a senha?</a>
+          </div>
+          <button class="botao" id="login" type="submit" onclick="telaLogin()">sing up</button>
+        </div>
+        <img class=bg-login src='bg-login.png'>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="meus-objetivos">
+  <div class="container">
+    <img class='bg-tela2' src='bg-tela2.png'>
+    <p class="texto-tela2">MEUS OBJETIVOS</p>
+    <p class="texto-tela2-ed">Edlayne ribeiro da silva</p>
+    <p class="texto-tela2-desc">Olá, sou Edlayne Ribeiro, psicóloga clínica, e meu </br>
+      objetivo é ajudar você a cuidar da sua saúde</br>
+      emocional e encontrar o bem-estar mental.</p>
+    <p class="texto-tela2-desc2">Quero conhecer você de verdade, entender o</br> que está acontecendo e te oferecer um
+      espaço</br> seguro e acolhedor para que possamos juntos</br> encontrar soluções para seus problemas. Quero</br> te
+      ajudar a superar crises, lidar com suas</br> emoções, promover seu crescimento pessoal e</br> emocional, e
+      encontrar o equilíbrio necessário</br> para uma vida plena e feliz.</p>
+
+    <img class='lineWText' src='line.png'>
+    <p class="topicos1"><img class="correto" src="correto.png">Serviços de aconselhamento on-line para pacientes</p>
+    <p class="topicos"><img class="correto" src="correto.png">Realmente conhecer suas necessidades e expectativas</p>
+    <p class="topicos"><img class="correto" src="correto.png">Estou aqui para ajudá-lo a superar momentos</br> difíceis
+      e encontrar
+      soluções para seus desafios
+    </p>
+
+    <button class="botao" id="botao" type="button" onclick="handleLogin()"> consulte-se &nbsp;&nbsp; ▶ </button>
+  </div>
+  </div>
+  <div id="sobre-mim" class="tela 3">
+    <img class="vaso2" src="vaso.png">
+    <img class="edlayne2" src="0 1.png">
+    <p class="sobremim">Sobre mim</p>
+
+    <p class="nomeinfo">Edlayne ribeiro da silva</p>
+    <p class="nomeinfo">CRP 13/9518</p>
+    <div class="infos-container">
+      <p class="informacoes">
+        Olá, sou Edlayne Ribeiro, psicóloga apaixonada pela abordagem da Terapia Cognitivo-Comportamental (TCC). Desde
+        que me formei, há alguns anos, tenho dedicado minha carreira a ajudar pessoas a superarem seus desafios
+        emocionais e comportamentais.
+      </p>
+      <p class="informacoes">Meu objetivo é capacitar meus pacientes a se tornarem seus próprios terapeutas,
+        fornecendo-lhes as ferramentas e habilidades necessárias para lidar com os desafios que enfrentam não apenas
+        durante nossas sessões, mas ao longo de suas vidas.
+      </p>
+      <p class="informacoes">É um privilégio testemunhar a resiliência e o crescimento de cada indivíduo que passa pelo
+        processo terapêutico, e estou profundamente grata por poder desempenhar esse papel em suas vidas.</p>
+      <div class="apps">
+        <a href="https://api.whatsapp.com/send?phone=5583981940972&text=Ol%C3%A1,%20Edlayne" target="_blank">
+          <img src="zap.png">
+        </a>
+        <a href="https://www.instagram.com/psicologaedlayne/" target="_blank">
+          <img src="insta.png">
+        </a>
+        <a href="mailto:Edlayneribeiro98@gmail.com" target="_blank">
+          <img src="gmail.png">
+        </a>
+      </div>
+      <img class="linha-tela3" src="linha-unida.png">
+      <div id="como-funciona-a-terapia-online">
+      <p class="funcionamento">Como Funciona a </p>
+      <p class="terapia">Terapia Online</p>
+      <div class="carrosel">
+        <img class="carroça" src="carrosel1.png">
+        <img class="carroça" src="carrosel2.png">
+        <img class="carroça" src="carrosel3.png">
+        <img class="carroça" src="carrosel4.png">
+      </div>
+      <div class="descs-terapia">
+        <div class="negrito0">
+          <p class="negrito">Whatsapp</p>
+          <p class="italico">Entre em contato através do WhatsApp</p>
+          <img class="l0" src="linha desc.png">
+        </div>
+        <div class="negrito1">
+          <p class="negrito">Marque o Horário</p>
+          <p class="italico">Escolha um dos horários disponíveis que melhor te atenda
+            (SEGUNDA à SABÁDO)</p>
+          <img class="l1" src="linha desc.png">
+        </div>
+        <div class="negrito2">
+          <p class="negrito">Pagamento</p>
+          <p class="italico">Faça o pagamento da sessão (Cartão de Crédito, Transferência ou Pix)</p>
+          <img class="l2" src="linha desc.png">
+        </div>
+        <div class="negrito3">
+          <p class="negrito">Consulta</p>
+          <p class="italico">Enviarei o link da reunião pelo WhatsApp de alguma das seguintes plataformas: Google Meet
+          </p>
+          <img class="l3" src="linha desc.png">
+        </div>
+      </div>
+      <img class="linhaD" src="linha d.png">
+
+    </div>
+  </div>
+  </div>
+  <div class="rodape"></div>
+  <p class="nome2">edlayne</p>
+  <p class="funcao2">psicóloga</p>
+  <p class="vamonos">Vamos conversar?</br>
+    Edlayne ribeiro da silva –  CRP 13/9518</p>
+  <p class="vamonos">
+    Telefone e e-mail </br>
+    <a class="link" href="https://api.whatsapp.com/send?phone=5583981940972&text=Ol%C3%A1,%20Edlayne" target="_blank">
+      +55 (83) 98194-0972</a>
+    </br>
+    <a class="link" href="mailto:Edlayneribeiro98@gmail.com" target="_blank">@PSICOLOGAEDLAYNE</a>
+  </p>
+  <div class="apps2">
+    <a href="https://api.whatsapp.com/send?phone=5583981940972&text=Ol%C3%A1,%20Edlayne>" target="_blank">
+      <img src="zap2.png">
+    </a>
+    <a href="https://www.instagram.com/psicologaedlayne/" target="_blank">
+      <img src="insta2.png">
+    </a>
+    <a href="mailto:Edlayneribeiro98@gmail.com" target="_blank">
+      <img src="gmail2.png">
+    </a>
+  </div>
+  <img class="linhaR" src="linha-rodape.png">
+  
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+html{
+  background-image: url("bg-tela3.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x:hidden;
+}
+.menuContainer {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: space-between;
+
+}
+
+.nomefuncao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 32px;
+  margin-left: 120px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 40px;
+  margin-right: 32px;
+  align-items: bottom;
+}
+
+
+.cabecalho2 {
+
+  margin-top: -200px;
+  margin: 0px;
+  background: #A5654B;
+  height: 44px;
+  width: 100vw;
+}
+
+img {
+  display: flex;
+}
+
+.nome {
+  color: #896355;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 48px;
+  margin: 0px;
+}
+
+.funcao {
+  color: #9A634C;
+  font-family: 'Luxurious Script', cursive;
+  font-size: 48px;
+  margin: 0px;
+}
+
+.menuitem {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #896355;
+  font-size: 20px;
+  -webkit-text-stroke: 1px #896355;
+}
+.lupa {
+  height: 25px;
+  width: 23px;
+}
+
+.user {
+
+  width: 35px;
+}
+
+.hamburguer {
+  height: 25px;
+  width: 34px;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 15px;
+  margin-right: 32px;
+  align-items:baseline;
+}
+
+.nomefuncao,
+.menu {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-35%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.menuTexto{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+a{
+  text-decoration: none;
+}
+
+.menuBotao{
+  border: none;
+  z-index:1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.cao{
+  margin-top: 8%;
+  margin-left: 5%;
+  z-index: 2;
+  position: relative;
+}
+.blur{
+  margin-top: -19%;
+   margin-left: 8%;
+}
+.caixa-infos{
+  margin-top: -20%;
+  margin-left: 40%;
+  width: 50%;
+}
+.nome-usuario{
+  font-family: 'Julius Sans One', bold;
+  font-size: 36px;
+  color: #896355;
+  margin-left: 5%;
+  margin-top: -3%;
+}
+.user-usuario{
+  font-family: 'Judson', bold;
+  font-size: 35px;
+  color: #A5654B;
+   margin-left: 12%;
+}
+.transparente{
+  width: 100%;
+  position: relative;
+  margin-top: 20%;
+}
+.pre-user{
+  font-family: 'Julius Sans One', bold;
+  font-size: 42px;
+  color: #A5654B;
+}
+.user-user{
+  font-family: 'Judson', bold;
+  font-size: 42px;
+  color: #A5654B;
+}
+#nome{
+  margin-top: -23%;
+  margin-left: 43%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.infos-user{
+  display: flex;
+  flex-direction: row;
+}
